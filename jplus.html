@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="masterbig">
+        <div class="master">
+            <div class="big">
+                <h3>according</h3>
+                <i class="fa-solid fa-circle-plus"></i>
+            </div>
+            <div class="small">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius facilis, quos necessitatibus mollitia a natus soluta quo incidunt hic animi delectus omnis aspernatur iste quaerat molestias sed corporis quidem amet.</p>
+            </div>
+        </div>
+        <div class="master">
+            <div class="big">
+                <h3>according</h3>
+                <i class="fa-solid fa-circle-plus"></i>
+            </div>
+            <div class="small">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius facilis, quos necessitatibus mollitia a natus soluta quo incidunt hic animi delectus omnis aspernatur iste quaerat molestias sed corporis quidem amet.</p>
+            </div>
+        </div>
+        <div class="master">
+            <div class="big">
+                <h3>according</h3>
+                <i class="fa-solid fa-circle-plus"></i>
+            </div>
+            <div class="small">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius facilis, quos necessitatibus mollitia a natus soluta quo incidunt hic animi delectus omnis aspernatur iste quaerat molestias sed corporis quidem amet.</p>
+            </div>
+        </div>
+        <div class="master">
+            <div class="big">
+                <h3>according</h3>
+                <i class="fa-solid fa-circle-plus"></i>
+            </div>
+            <div class="small">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius facilis, quos necessitatibus mollitia a natus soluta quo incidunt hic animi delectus omnis aspernatur iste quaerat molestias sed corporis quidem amet.</p>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let span = document.querySelectorAll("i")
+        span.forEach((ele) => {
+            ele.onclick = (curr) => {
+                console.log(curr)
+                if (curr.target.classList.contains("fa-circle-plus")) {
+                    curr.target.parentElement.nextElementSibling.style.display = "block"
+                }
+            }
+            console.log(ele)
+        })
+    </script>
+</body>
+
+</html>
